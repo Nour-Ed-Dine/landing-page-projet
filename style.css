@@ -1,0 +1,166 @@
+/* TO DO : mettre les variables dans le root (couleurs, polices, tailles textes) */
+/* Reset */
+* {
+    background-color: #E6F6EB;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 18px;
+    --color-1: #FBFEFC;
+    --color-2: #F4FBF6;
+    --color-3: #E6F6EB;
+    --color-4: #D6F1DF;
+    --color-5: #C4E8D1;
+    --color-6: #ADDDC0;
+    --color-7: #8ECEAA;
+    --color-8: #5BB98B;
+    --color-9: #30A46C;
+    --color-10: #2B9A66;
+    --color-11: #218358;
+    --color-12: #193B2D;
+}
+
+/* Style Global */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--color-12);
+    background-color: var(--color-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 54px;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+p {
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Boites */
+section {
+    padding: 80px 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardWrapper {
+
+    padding : 20px;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+
+}
+
+/* buttons */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: var(--color-9);
+    color: var(--color-1);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-8);
+}
+
+/*Header*/
+.flexheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-9);
+    border-bottom: 1px solid var(--color-9);
+}
+
+/* Hero section */
+.flexhero {
+    flex-direction: row;
+    text-align: left;
+}
+
+/* problematique */
+/* solution */
+/* Preuves */
+/* engagement */
+#engagement article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* footer */
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
