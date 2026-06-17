@@ -1,0 +1,76 @@
+/* class div cards-cible*/
+.cards-cible{
+   
+    padding: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.card-cible{
+    display: flex;
+    gap: 20px;
+}
+
+/* class div cards-contexte*/
+.cards-contexte{
+    padding: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+/* class container*/
+/* class cards-service */
+.cards-service{
+      
+    padding: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+/* class cards-technologie */
+.cards-technologie{
+      
+    padding: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+/* class cards-prototype */
+.cards-prototype{
+      
+    padding: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+/* class cards-evolution */
+.cards-evolution{
+      
+    padding: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+/* class cards-references*/
+.cards-references{
+      
+    padding: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.container-doc{
+    max-width: 1200px;
+    margin: 0 auto;
+}
