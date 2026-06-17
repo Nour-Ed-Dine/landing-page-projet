@@ -65,20 +65,20 @@
             <!-- TO DO : Mettre des tirets pour séparer les mots dans les noms des classes : card-container -->
             <div class="cardWrapper">
                 <article class="card">
-                    <img src="assets/Iconeun.png" class="icone">
+                    <img src="assets/Iconeun.png">
                     <div class="text-card">
                         <h3>DE LA SIMPLICITE</h3>
                         <p>Facilité d’utilisation.</p>
                     </div>
                 </article>
-                <article class="card" class="icone">
+                <article class="card">
                     <img src="assets/iconedeux.png">
                     <div class="text-card">
                         <h3>DU TEMPS</h3>
                         <p>Gagner sur la gestion de votre association.</p>
                     </div>
                 </article>
-                <article class="card" class="icone">
+                <article class="card">
                     <img src="assets/iconetrois.png">
                     <div class="text-card">
                         <h3>MULTI-OUTIL</h3>
@@ -90,7 +90,7 @@
     </section>
 
     <section id="application">
-        <div class="container flexapplication">
+        <div class="container">
             <h2>Comment ça marche ?</h2>
             <div class="fonction-container">
                 <div class="fonction">
@@ -179,9 +179,7 @@
 
     <section id="engagement">
         <div class="container">
-            <div class="cardWrapper">
-                <img src="assets/imageengagement.svg">
-            </div>
+            <img src="assets/imageengagement.svg" class="imageengagement">
         </div>
     </section>
 
@@ -198,11 +196,10 @@
                     <h3>Nous Contacter</h3>
                     <form>
                         <label for="name" hidden>Nom : </label>
-                        <input type="text" id="name" placeholder="Votre Nom">
+                        <input type="text" id="name" placeholder="John Doe">
                         <label for="mail" hidden>Mail :</label>
-                        <input type="email" id="mail" placeholder="Email">
-                        <textarea name="textarea" rows="" cols="30">Votre message
-                        </textarea>
+                        <input type="email" id="mail" placeholder="Example@example.com">
+                        <textarea name="textarea" rows="1" cols="30" placeholder="Votre message"></textarea>
                         <button type="submit" class="btn-form">ENVOYER</button>
                     </form>
                 </div>
