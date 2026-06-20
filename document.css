@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 :root {
@@ -40,6 +39,7 @@ h5,
 h6 {
     font-family: var(--font-family);
     line-height: 1.2;
+    text-align: center;
 }
 
 h1 {
@@ -58,7 +58,6 @@ h3 {
 }
 
 p {
-    padding: 12px;
     font-size: 18px;
     margin-bottom: 12px;
 }
@@ -82,7 +81,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .flexheader {
@@ -110,18 +108,21 @@ nav a {
     gap: 48px;
 }
 
-figcaption {
-    font-size: 16px;
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.card-contexte {
-    margin-bottom: 48px;
+figcaption {
+    font-size: 16px;
 }
 
 .autoflow {
     margin-bottom: 48px;
 }
 
-.card-technologie {
-    margin-bottom: 48px;
+.card {
+    margin-bottom: 24px;
 }

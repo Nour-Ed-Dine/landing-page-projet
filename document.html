@@ -77,7 +77,7 @@
     <section id="contexte">
         <div class="container">
             <h2> Un gaspillage alimentaire à grande échelle.</h2>
-            <div class="card-contexte">
+            <article class="card">
                 <h3>Problématique</h3>
                 <p>
                     En France, plus de 10 millions de tonnes de nourriture sont gaspillées chaque année. Pourtant,
@@ -86,8 +86,8 @@
                     Il existe déjà des acteurs qui agissent pour la redistribution alimentaire en
                     essayant de réduire le gaspillage.
                 </p>
-            </div>
-            <div>
+            </article>
+            <article class="card">
                 <h3>Nos solutions</h3>
                 <p>
                     Au Bon Panier est né d’un constat simple : les outils existants sont souvent trop complexes ou mal
@@ -95,61 +95,69 @@
                     Pour répondre à ces besoins, nous avons développé une solution pensée pour le terrain et centrée sur
                     l’efficacité.
                 </p>
-                <h4>Des outils simples et adaptés aux associations</h4>
+            </article>
+            <article class="card">
+                <h3>Des outils simples et adaptés aux associations</h3>
                 <p>
                     Nous proposons une interface intuitive, conçue pour être utilisée facilement par tous,
                     même sans compétences techniques. Chaque fonctionnalité répond à un besoin concret du
                     quotidien associatif.
                 </p>
-                <h4>Réduire le gaspillage alimentaire grâce à une chaîne de redistribution fluide</h4>
+            </article>
+            <article class="card">
+                <h3>Réduire le gaspillage alimentaire grâce à une chaîne de redistribution fluide</h3>
                 <p>
                     Notre solution optimise chaque étape, du don à la distribution. Les stocks sont mieux suivis, les
                     paniers mieux
                     organisés et les pertes réduites au minimum.
                 </p>
-                <h4>Faciliter le travail des bénévoles et améliorer la coordination</h4>
+            </article>
+            <article class="card">
+                <h3>Faciliter le travail des bénévoles et améliorer la coordination</h3>
                 <p>
                     En automatisant les tâches répétitives (inventaires, suivi des paniers, traçabilité),
                     Au Bon Panier libère du temps pour l’essentiel : accompagner les bénéficiaires.
                     Les équipes gagnent en efficacité et la coordination devient plus simple et plus rapide.
                 </p>
-            </div>
+            </article>
         </div>
     </section>
 
     <section id="services">
         <div class="container">
-            <h2>Comment ça marche ?</h2>
-            <p>
-                L’utilisateur ouvre l’application et dicte oralement la liste des produits
-                disponibles. L’application transcrit et structure automatiquement
-                l’inventaire. Ensuite, un algorithme génère des paniers équilibrés à
-                partir de cet inventaire, prêts à être distribués.
-            </p>
-            <div class="autoflow">
+            <article class="card">
+                <h2>Comment ça marche ?</h2>
+                <p>
+                    L’utilisateur ouvre l’application et dicte oralement la liste des produits
+                    disponibles. L’application transcrit et structure automatiquement
+                    l’inventaire. Ensuite, un algorithme génère des paniers équilibrés à
+                    partir de cet inventaire, prêts à être distribués.
+                </p>
+            </article>
+            <!-- TO DO: Inserer le userflow -->
+            <article class="autoflow">
                 <h3>Saisie vocale de l’inventaire</h3>
                 <figure>
                     <img src="assets/generationinventaire.svg" alt="Autoflow de la saisie vocale d'inventaire">
                     <figcaption>
-                        L’utilisateur de l’association ouvre l’application et dicte
-                        oralement la liste des produits disponibles, et la liste se
-                        génère automatiquement en fonction des produits dictés.
+                        L’utilisateur n’a pas à taper, à naviguer dans des menus ou à remplir des formulaires.
+                        Il parle, l’appli comprend. C’est le choix le plus fort pour réduire la friction.
                     </figcaption>
                 </figure>
-            </div>
-            <div class="autoflow">
+            </article>
+            <article class="autoflow">
                 <h3>Génération automatique de paniers personnalisés</h3>
                 <figure>
-                    <img src="assets/generationpanier.svg" alt="Autoflow de la génération de panier">
+                    <img src="assets/generationpanier.png" alt="Autoflow de la génération de panier">
                     <figcaption>
                         Après la génération de l'inventaire par commande vocale,
                         un algorithme génère des paniers identiques et équilibrés
                         à partir de cet inventaire, prêts à être distribués.
                     </figcaption>
                 </figure>
-            </div>
-            <div class="autoflow">
-                <h3>Gérer les bénéficiaires</h3>
+            </article>
+            <article class="autoflow">
+                <h3>Gestion des bénéficiaires</h3>
                 <figure>
                     <img src="assets/distributionbeneficiaire.svg" alt="Autoflow de la distribution de panier">
                     <figcaption>
@@ -163,51 +171,58 @@
                         bénévole que pour le bénéficiaire.
                     </figcaption>
                 </figure>
-            </div>
+            </article>
         </div>
     </section>
 
     <section id="technologies">
         <div class="container">
             <h2>Nos Technologies et Outils.</h2>
-                <div class="card-technologie">
-                        <h3>Reconnaissance vocale</h3>
-                        <p>
-                            Génération de l’inventaire par commande vocale, avec transcription en temps réel.
-                            Cette technologie permet aux bénévoles de créer un inventaire sans saisie manuelle,
-                            directement depuis le terrain.
-                        </p>
-                </div>
-                <div class="card-technologie">
-                        <h3>Algorithme de génération de paniers</h3>
-                        <p>
-                            Logique de répartition basée sur les quantités disponibles et les profils des
-                            bénéficiaires. L’algorithme optimise la composition des paniers pour garantir une
-                            distribution équitable et adaptée aux besoins.
-                        </p>
-                </div>
-                <div class="card-technologie">
-                        <h3>Nos langage de programmation</h3>
-                        <p>
-                            HTML, CSS, JavaScript / React Native,
-                            React‑native‑qr‑code‑svg,
-                            React‑native‑camera.
-                            Ces technologies permettent une application mobile performante, légère et adaptée.
-                        </p>
-                </div>
-                <div class="card-technologie">
-                        <h3>Design et prototypage</h3>
-                        <p>
-                            Le prototype haute fidélité a été conçu sur Figma, permettant une visualisation précise
-                            de l’interface et une expérience utilisateur optimisée avant le développement.
-                        </p>
-                </div>
+            <article class="card">
+                <h3>Reconnaissance vocale</h3>
+                <p>
+                    Reconnaissance vocale : Web Speech API / Whisper (OpenAI),
+                    Azure Speech Service pour la transcription en temps réel.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Algorithme de génération de paniers</h3>
+                <p>
+                    Logique de répartition basée sur les quantités disponibles et les profils des
+                    bénéficiaires. L’algorithme optimise la composition des paniers pour garantir une
+                    distribution équitable et adaptée aux besoins.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Nos langage de programmation</h3>
+                <p>
+                    HTML, CSS, JavaScript / React Native,
+                    React‑native‑qr‑code‑svg,
+                    React‑native‑camera.
+                    Ces technologies permettent une application mobile performante, légère et adaptée.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Design et prototypage</h3>
+                <p>
+                    Le prototype haute fidélité a été conçu sur Figma, permettant une visualisation précise
+                    de l’interface et une expérience utilisateur optimisée avant le développement.
+                </p>
+            </article>
         </div>
     </section>
 
     <section id="prototype">
         <div class="container">
-            <h2>Prototype et rendu haute fidélité</h2>
+            <article class="card">
+                <h2>Prototype et rendu haute fidélité</h2>
+                <p>
+                    Le prototype haute fidélité a été réalisé sur Figma. Il couvre les écrans principaux :
+                    le processus d'intégration, la saisie vocale de l’inventaire, la visualisation des stocks et
+                    la génération des paniers. Chaque écran a été conçu en tenant compte des contraintes
+                    terrain : grands boutons, langage simple, retour visuel clair.
+                </p>
+            </article>
             <div class="cards-prototype">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="393" height="874"
                     src="https://embed.figma.com/proto/IXh5BrYBI8C1sz7wmHHZUi/Redistribution-alimentaire--antigaspi---ins%C3%A9curit%C3%A9-alimentaire-?node-id=977-3480&p=f&viewport=-50%2C25%2C0.06&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=977%3A3480&page-id=227%3A795&embed-host=share&hide-ui=1"
@@ -219,54 +234,67 @@
 
     <section id="evolution">
         <div class="container">
-            <h2>giuo,io;</h2>
-            <div class="cards-evolution">
-                <div class="card-evolution">
-                    <h2>guijio</h2>
-                    <h3>yguij</h3>
-                    <p>ygiuj</p>
-                </div>
-                <div class="card-evolution">
-                    <h2>guijio</h2>
-                    <h3>yguij</h3>
-                    <p>ygiuj</p>
-                </div>
-                <div class="card-evolution">
-                    <h2>guijio</h2>
-                    <h3>yguij</h3>
-                    <p>ygiuj</p>
-                </div>
-            </div>
+            <h2> Les évolutions possibles</h2>
+            <article class="card">
+                <h3>Extension des fonctionnalités</h3>
+                <p>
+                    Développement de l’interface bénéficiaire, notifications automatiques lors de la disponibilité
+                    d’un panier,
+                    version multilingue et intégration avec des plateformes comme Too Good To Go ou les banques
+                    alimentaires nationales.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Interconnexion des associations</h3>
+                <p>
+                    Mise en place d’un réseau permettant aux associations de partager leurs surplus en temps réel,
+                    d’améliorer la coordination et de réduire encore davantage le gaspillage alimentaire.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Roadmap & amélioration continue</h3>
+                <p>
+                    Refaire des tests utilisateurs, ajouter des thèmes pour l’accessibilité visuelle,
+                    lancer un cycle d’amélioration continue et étendre l’utilisation de l’application au-delà de la
+                    France.
+                </p>
+            </article>
         </div>
     </section>
 
     <section id="references">
         <div class="container">
-            <h2>trgfbuynih,j;ipo</h2>
-            <div class="cards-references">
-                <div class="card-reference">
-                    <div class="card-ref">
-                        <h2>ytiuyuio;</h2>
-                        <p>ygetrfbuji;okp</p>
-                    </div>
-                    <img src="">
+            <h2>Nos références et inspirations</h2>
+            <div class="card-reference">
+                <article class="card">
+                    <h3>Too Good To Go</h3>
+                    <p>
+                        Ce service nous a inspirés pour fluidifier la redistribution alimentaire
+                        et améliorer le lien entre donateurs, associations et bénéficiaires.
+                    </p>
+                </article>
+                <img src="">
+            </div>
+            <div class="card-reference">
+                <article class="card">
+                    <h3>HopHopFood</h3>
+                    <p>
+                        Le design, la typographie et le style d’illustration de HopHopFood ont
+                        influencé l’identité visuelle et l’expérience utilisateur de notre application.
+                    </p>
+                </article>
+                <img src="">
 
-                </div>
-                <div class="card-reference">
-                    <div class="card-ref">
-                        <h2>ytiuyuio;</h2>
-                        <p>ygetrfbuji;okp</p>
-                    </div>
-                    <img src="">
-
-                </div>
-                <div class="card-reference">
-                    <div class="card-ref">
-                        <h2>ytiuyuio;</h2>
-                        <p>ygetrfbuji;okp</p>
-                    </div>
-                    <img src="">
-                </div>
+            </div>
+            <div class="card-reference">
+                <article class="card">
+                    <h3>Miam’Up</h3>
+                    <p>
+                        Leur organisation et leur structure opérationnelle ont guidé notre réflexion
+                        sur la gestion des flux, la logistique et l’efficacité terrain.
+                    </p>
+                </article>
+                <img src="">
             </div>
         </div>
     </section>
