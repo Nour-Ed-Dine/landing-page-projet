@@ -1,7 +1,7 @@
 /* TO DO : mettre les variables dans le root (couleurs, polices, tailles textes) */
 /* Reset */
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,8 +29,7 @@ body {
     font-family: var(--font-family);
     font-size: var(--font-size);
     color: var(--color-12);
-    background-color: var(--color-1);
-    background-color: #E6F6EB;
+    background-color: var(--color-3);
 }
 
 h1,
@@ -61,7 +60,7 @@ h3 {
 p {
     padding: 12px;
     font-size: 18px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 img {
@@ -92,22 +91,18 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 /* cards */
 .card {
-    background-color: white;
+    background-color: var(--color-1);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: stretch;
-    gap: 20px;
+    gap: 12px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
-    
-
 }
 
 /* buttons */
@@ -118,6 +113,7 @@ section {
     color: var(--color-1);
     text-decoration: none;
     border-radius: 5px;
+    width: fit-content;
     transition: background-color 0.3s ease;
 }
 
@@ -147,6 +143,7 @@ nav a {
 
 /* Hero section */
 .flexhero {
+    display: flex;
     flex-direction: row;
     text-align: left;
 }
@@ -155,104 +152,105 @@ nav a {
 /* solution */
 
 /* application */
-.fonction{
+.fonction {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.flexapplication {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-}
 
 .fonction-container {
+    background-color: var(--color-2);
     padding: 50px 80px;
+    margin-bottom: 24px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 48px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
-    background-color: #F4FBF6
 }
+
 /* Preuves */
 
 /* engagement */
-#engagement article {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
 
 /* footer */
+footer {
+    background-color: var(--color-12);
+}
 
 .flexfooter {
-    padding: 20px;
+    padding: 20px 0;
     gap: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.flexfooter h3,
+.flexfooter p {
+    color: var(--color-1);
 }
 
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid var(--color-1);
+    border-right: 1px solid var(--color-1);
+    padding: 20px 12px;
+}
+
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     gap: 24px;
 }
-.info1{
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(15, 14, 14, 0.15);
-    
-}
-.info2{
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(15, 14, 14, 0.15);
-    
+.copyright p{
+    font-size: 12px;
 }
 
-
-input {
-    width: 400px;
-    padding: 4px;
-    border-radius: 4px;
-    background-color: white;
-}
-
-input::placeholder{
-    font-weight: bold;
-    opacity: 0.5;
-    color: var(--color-12);
-
-}
-
+input,
 textarea {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-textarea::placeholder{
-    font-weight: bold;
-    opacity: 0.5;
-    color: var(--color-12);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    width: 100%;
+    max-width: 400px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: var(--color-1);
+    resize: none;
 }
 
 .btn-form {
     padding: 14px 32px;
-    background-color: var(--color-12);
-    color: var(--color-1);
+    font-weight: bold;
+    background-color: var(--color-1);
+    color: var(--color-12);
     text-decoration: none;
     border-radius: 5px;
     width: fit-content;
+    cursor: pointer;
 }
 
-
+.media img {
+    max-width: 48px;
+    margin: 0 12px;
+}

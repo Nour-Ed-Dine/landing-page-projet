@@ -18,10 +18,10 @@
 <body>
     <header>
         <div class="container flexheader">
-            <img src="assets/Au Bon Panier.png" alt="logo">
+            <img src="assets/aubonpanier.png" alt="logo">
             <nav>
-                <a href="document.html">Accueil</a>
-                <a href="#">Documentation</a>
+                <a href="#">Accueil</a>
+                <a href="document.html">Documentation</a>
             </nav>
         </div>
     </header>
@@ -65,24 +65,24 @@
             <!-- TO DO : Mettre des tirets pour séparer les mots dans les noms des classes : card-container -->
             <div class="cardWrapper">
                 <article class="card">
-                    <img src="assets/Iconeun.png" class="icone">
-                    <div class="text-card">
-                        <h3>DE LA SIMPLICITE</h3>
-                        <p>Facilité d’utilisation.</p>
-                    </div>
-                </article>
-                <article class="card" class="icone">
                     <img src="assets/iconedeux.png">
                     <div class="text-card">
-                        <h3>DU TEMPS</h3>
-                        <p>Gagner sur la gestion de votre association.</p>
+                        <h3>DE LA SIMPLICITE</h3>
+                        <p>Une prise en main immédiate, sans effort.</p>
                     </div>
                 </article>
-                <article class="card" class="icone">
+                <article class="card">
+                    <img src="assets/Iconeun.png">
+                    <div class="text-card">
+                        <h3>DU TEMPS</h3>
+                        <p>Gagner du temps sur la gestion de votre association.</p>
+                    </div>
+                </article>
+                <article class="card">
                     <img src="assets/iconetrois.png">
                     <div class="text-card">
-                        <h3>MULTI-OUTIL</h3>
-                        <p>D’argent grâce à notre modèle 100% gratuit.</p>
+                        <h3>TOUT-EN-UN</h3>
+                        <p>Gérez inventaires, paniers et distributions en un seul outil.</p>
                     </div>
                 </article>
             </div>
@@ -90,10 +90,10 @@
     </section>
 
     <section id="application">
-        <div class="container flexapplication">
+        <div class="container">
             <h2>Comment ça marche ?</h2>
             <div class="fonction-container">
-                <div class="fonction">
+                <article class="fonction">
                     <h3>Gérer vos dons alimentaires en vocal</h3>
                     <p>
                         Vous êtes une structure qui permet aux usagers de récolter des paniers de nourriture?
@@ -106,12 +106,12 @@
                         paniers, les rendre visibles aux usagers
                         Gérer les stocks d’invendus et organiser les paniers.
                     </p>
-                </div>
+                </article>
                 <img src="assets/ecranappun.svg">
             </div>
             <div class="fonction-container">
                 <img src="assets/ecranappdeux.png">
-                <div class="fonction">
+                <article class="fonction">
                     <h3>Faciliter la création de vos paniers</h3>
                     <p>
                         Après la génération de l'inventaire par commande vocale, un algorithme génère des paniers
@@ -122,10 +122,10 @@
                         Notre application automatise la création des paniers alimentaires pour une distribution rapide,
                         équitable et sans gaspillage.
                     </p>
-                </div>
+                </article>
             </div>
             <div class="fonction-container">
-                <div class="fonction">
+                <article class="fonction">
                     <h3>Gérer vos bénéficiaires </h3>
                     <p>
                         Le scan de QR code permet une identification instantanée des bénéficiaires et simplifie la
@@ -136,7 +136,7 @@
                         d’erreurs et plus de fluidité.
 
                     </p>
-                </div>
+                </article>
                 <img src="assets/ecranapptrois.svg">
             </div>
         </div>
@@ -149,16 +149,16 @@
                 <article class="card">
                     <img src="assets/temoignageadrien.png">
                     <p>Adrien</p>
-                    <h3>Dirigeant de l’association Un repas pour tous</h3>
+                    <h3>Dirigeant de l’association "Un repas pour tous"</h3>
                     <p>
-                        “Depuis que nous utilisons l’application Au Bon Panier, la logistique pour
-                        faire l’inventaire ainsi que la création des paniers est optimiser”
+                        “Depuis que nous utilisons l’application Au Bon Panier, l’inventaire ainsi que la création des
+                        paniers est optimiser”
                     </p>
                 </article>
                 <article class="card">
                     <img src="assets/temoignagetatiana.png">
                     <p>Tatiana</p>
-                    <h3>Bénévole de l’association Des Panier Garnis</h3>
+                    <h3>Bénévole de l’association "Des Panier Garnis"</h3>
                     <p>
                         "Depuis que j’utilise l’application Au Bon Panier , mes actions sont simplifiés et
                         j’ai gagné beaucoup de temps."
@@ -167,7 +167,7 @@
                 <article class="card">
                     <img src="assets/temoignagemalicka.png">
                     <p>Malika</p>
-                    <h3>Dirigeant de l’association Un repas pour tous</h3>
+                    <h3>Dirigeant de l’association "Un repas pour tous"</h3>
                     <p>
                         “Depuis que j’utilisel’application Au Bon Panier, je suis plus
                         rapide et les bénéficiaires n’attendent plus.”
@@ -179,34 +179,40 @@
 
     <section id="engagement">
         <div class="container">
-            <div class="cardWrapper">
-                <img src="assets/imageengagement.svg">
-            </div>
+            <img src="assets/imageengagement.svg" class="imageengagement">
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="flexfooter">
-                <article class="info1">
-                    <p>Accueil</p>
-                    <p>Comment ça marche ?</p>
-                    <p>Contact</p>
-                    <p>Notre équipe</p>
-                </article>
-                <div class="info2">
-                    <h3>Nous Contacter</h3>
-                    <form>
-                        <label for="name" hidden>Nom : </label>
-                        <input type="text" id="name" placeholder="Votre Nom">
-                        <label for="mail" hidden>Mail :</label>
-                        <input type="email" id="mail" placeholder="Email">
-                        <textarea name="textarea" rows="" cols="30">Votre message
-                        </textarea>
-                        <button type="submit" class="btn-form">ENVOYER</button>
-                    </form>
+        <div class="container flexfooter">
+            <article class="contenu">
+                <p>Accueil</p>
+                <p>Comment ça marche ?</p>
+                <p>Contact</p>
+                <p>Notre équipe</p>
+                <p>Politique de confidentialité</p>
+            </article>
+            <div class="copyright">
+                <h3>Au Bon Panier — Simplifier la solidarité</h3>
+                <div class="media">
+                    <a href="#"><img src="assets/facebook.svg"></a>
+                    <a href="#"><img src="assets/instagram.svg"></a>
+                    <a href="#"><img src="assets/linkedin.svg"></a>
                 </div>
+                <p>© 2026 Au Bon Panier. Tous droits réservés.</p>
             </div>
+            <div class="contenu">
+                <h3>Nous Contacter</h3>
+                <form>
+                    <label for="name" hidden>Nom : </label>
+                    <input type="text" id="name" placeholder="John Doe">
+                    <label for="mail" hidden>Mail :</label>
+                    <input type="email" id="mail" placeholder="Example@example.com">
+                    <textarea name="textarea" rows="1" cols="30" placeholder="Votre message"></textarea>
+                    <button type="submit" class="btn-form">ENVOYER</button>
+                </form>
+            </div>
+
         </div>
     </footer>
 
