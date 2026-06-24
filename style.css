@@ -133,9 +133,12 @@ section {
 
 /*Header*/
 header {
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     width: 100%;
+    background-color: var(--color-3);
 }
+
 .flexheader {
     display: flex;
     flex-direction: row;
@@ -169,7 +172,7 @@ nav a {
     text-align: left;
     gap: 48px;
     .btn{
-        margin-top: 24px;
+    margin-top: 24px;
     }
 }
 
